@@ -1,43 +1,89 @@
 Dynamic Data Table Manager
-A Next.js 14 + Redux Toolkit + MUI application that renders a dynamic, client-side data table with global search, sorting, pagination, column show/hide with persistence, CSV import/export, and responsive layout for mobile/tablet/desktop.​
+
+A Dynamic, client-side data table built with Next.js 14, Redux Toolkit, and Material UI.
+Supports search, sorting, pagination, column management, CSV import/export, and is fully responsive.
 
 Features
-Table with default columns: Name, Email, Age, Role, including ASC/DESC sort on clickable headers and client-side pagination (10 rows/page).​
 
-Global search across all fields with instant filtering and page reset on term changes.​
+✅ Dynamic Table
 
-Manage Columns dialog to show/hide existing columns via checkboxes, add new fields, and persist visibility/order locally.​
+Default columns: Name, Email, Age, Role
 
-CSV import (PapaParse) with basic validation and header-driven dynamic columns; CSV export of current view including only visible columns.​
+Clickable headers for ASC/DESC sorting
 
-Responsive UI: stacked toolbar on small screens, horizontal scroll for the table on narrow viewports, consistent control heights on laptops, and theme toggle (light/dark).​
+Client-side pagination (10 rows per page)
 
-Tech stack
-Next.js 14 (App Router), React 18, TypeScript.​
+✅ Global Search
 
-Redux Toolkit + React-Redux for state management and derived selectors.​
+Instant filtering across all columns
 
-Material UI v5 for components, theming, and responsive utilities.​
+Resets to first page on search term change
 
-React Hook Form for dialog forms (add field).​
+✅ Column Management
 
-PapaParse for CSV parsing; FileSaver/Blob for CSV export.​
+Show/hide existing columns via checkboxes
 
-Getting started
-Create and install
+Add new fields dynamically
 
-npx create-next-app@latest dynamic-table --ts --eslint
+Persist visibility/order locally
 
+✅ CSV Import/Export
+
+Import CSV with dynamic columns (PapaParse)
+
+Basic validation
+
+Export current view including only visible columns
+
+✅ Responsive UI
+
+Stacked toolbar on small screens
+
+Horizontal scroll on narrow viewports
+
+Consistent control heights on larger screens
+
+Light/dark theme toggle
+
+Tech Stack
+
+Next.js 14 (App Router)
+
+React 18 + TypeScript
+
+Redux Toolkit + React-Redux
+
+Material UI v5
+
+React Hook Form
+
+PapaParse for CSV parsing
+
+FileSaver/Blob for CSV export
+
+Getting Started
+1. Create the project
+npx create-next-app@latest dynamic-table
 cd dynamic-table
 
-npm i @reduxjs/toolkit react-redux @mui/material @mui/icons-material @emotion/react @emotion/styled react-hook-form papaparse file-saver​
+2. Install dependencies
+npm install @reduxjs/toolkit react-redux @mui/material @mui/icons-material @emotion/react @emotion/styled react-hook-form papaparse file-saver
 
-Add project files
+3. Add project structure
 
-Add app/, components/, features/, lib/ as outlined below and paste in the provided code for page, providers, store, slices, components, and helpers.​
+Create the following directories:
 
-Run
+app/
+components/
+features/
+lib/
 
+
+Add the provided code for pages, providers, store, slices, components, and helpers.
+
+4. Run the project
 npm run dev
 
+
 Open http://localhost:3000
+ to view the app.
